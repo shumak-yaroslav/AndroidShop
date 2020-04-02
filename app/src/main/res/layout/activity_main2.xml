@@ -10,7 +10,6 @@
         android:id="@+id/scrollView2"
         android:layout_width="406dp"
         android:layout_height="601dp"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -23,7 +22,7 @@
             <LinearLayout
                 android:id="@+id/linearLayout13"
                 android:layout_width="match_parent"
-                android:layout_height="390dp"
+                android:layout_height="500dp"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -37,36 +36,46 @@
                     android:layout_marginTop="10dp"
                     tools:ignore="MissingConstraints">
 
-                    <Spinner
+                    <TextView
                         android:id="@+id/spCity"
-                        android:layout_width="154dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginLeft="16dp"
-                        android:layout_marginEnd="144dp"
-                        android:layout_marginRight="144dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Los Angeles"
+                        android:textSize="20sp"
                         tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="150dp"
+                        app:srcCompat="@drawable/back" />
 
                     <ImageView
                         android:id="@+id/imageView3"
                         android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginEnd="20dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
                         app:srcCompat="@drawable/orderby" />
 
                     <ImageView
                         android:id="@+id/imageView4"
                         android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginEnd="27dp"
-                        android:layout_marginRight="27dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
                         app:srcCompat="@drawable/user" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="380dp"
+                    android:layout_width="384dp"
                     android:layout_height="44dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
@@ -75,44 +84,54 @@
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints">
 
+
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_gravity="center"
                         android:background="@drawable/corner"
-                        android:hint="Please enter the product, brand, store"
-                        android:paddingLeft="81dp"
-                        android:paddingTop="11dp" />
+                        android:hint=" &#128269; Please enter the product, brand, store"
+                        android:paddingLeft="70dp"
+                        android:paddingTop="11dp">
+
+                    </TextView>
+
+
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="400dp"
-                    android:layout_height="121dp"
+                    android:layout_width="384dp"
+                    android:layout_height="178dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="0dp"
+                    android:layout_marginTop="20dp"
                     android:orientation="vertical"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints">
 
-                    <ImageView
-                        android:id="@+id/imageView6"
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
                         android:layout_width="match_parent"
-                        android:layout_height="111dp"
-                        android:layout_marginTop="10dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:srcCompat="@drawable/imagecomp" />
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            android:layout_height="match_parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/imagecomp" />
+                    </androidx.cardview.widget.CardView>
+
                 </LinearLayout>
 
                 <TableLayout
-
                     android:layout_width="392dp"
                     android:layout_height="157dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="0dp">
+                    android:layout_marginTop="20dp">
 
                     <TableRow
                         android:layout_width="380dp"
@@ -120,41 +139,36 @@
 
                         <ImageView
                             android:id="@+id/supermarket"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="-20dp"
                             app:srcCompat="@drawable/shop" />
 
                         <ImageView
                             android:id="@+id/baby"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             app:srcCompat="@drawable/child" />
 
                         <ImageView
                             android:id="@+id/digital"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_marginLeft="30dp"
-                            android:layout_marginTop="10dp"
                             app:srcCompat="@drawable/photo" />
 
                         <ImageView
                             android:id="@+id/food"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_marginLeft="30dp"
-                            android:layout_marginTop="10dp"
                             app:srcCompat="@drawable/food" />
 
                         <ImageView
                             android:id="@+id/life"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_marginLeft="30dp"
-                            android:layout_marginTop="10dp"
                             app:srcCompat="@drawable/star" />
 
 
@@ -166,49 +180,42 @@
 
                         <TextView
                             android:id="@+id/text_sup"
-                            android:layout_width="wrap_content"
+                            android:layout_width="85dp"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Shop"
-                            android:textStyle="bold" />
+                            android:layout_marginTop="5dp"
+                            android:text="Supermarket" />
 
                         <TextView
                             android:id="@+id/text_baby"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="40dp"
+                            android:layout_marginLeft="15dp"
                             android:layout_marginTop="5dp"
-                            android:text="Baby"
-                            android:textStyle="bold" />
+                            android:text="Baby" />
 
                         <TextView
                             android:id="@+id/text_digital"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="35dp"
+                            android:layout_marginLeft="33dp"
                             android:layout_marginTop="5dp"
-                            android:text="Digital"
-                            android:textStyle="bold" />
+                            android:text="Digital" />
 
                         <TextView
                             android:id="@+id/text_food"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="30dp"
+                            android:layout_marginLeft="38dp"
                             android:layout_marginTop="5dp"
-                            android:paddingLeft="5dp"
-                            android:text="Food"
-                            android:textStyle="bold" />
+                            android:text="Food" />
 
                         <TextView
                             android:id="@+id/text_life"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="40dp"
+                            android:layout_marginLeft="42dp"
                             android:layout_marginTop="5dp"
-                            android:paddingLeft="7dp"
-                            android:text="Life"
-                            android:textStyle="bold" />
+                            android:text="Life" />
                     </TableRow>
 
 
@@ -218,41 +225,42 @@
 
                         <ImageView
                             android:id="@+id/global"
-                            android:layout_width="58dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="-20dp"
+                            android:layout_marginTop="10dp"
                             app:srcCompat="@drawable/global" />
 
                         <ImageView
                             android:id="@+id/member"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="10dp"
                             app:srcCompat="@drawable/crown" />
 
                         <ImageView
                             android:id="@+id/coupon"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_marginLeft="30dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="10dp"
                             app:srcCompat="@drawable/coupon" />
 
                         <ImageView
                             android:id="@+id/spike"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_marginLeft="30dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="10dp"
                             app:srcCompat="@drawable/thunder" />
 
                         <ImageView
                             android:id="@+id/integral"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_marginLeft="30dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="10dp"
                             app:srcCompat="@drawable/starincircle" />
 
                     </TableRow>
@@ -263,20 +271,19 @@
 
                         <TextView
                             android:id="@+id/text_global"
-                            android:layout_width="wrap_content"
+                            android:layout_width="56dp"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Global"
-                            android:textStyle="bold" />
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Global" />
 
                         <TextView
                             android:id="@+id/text_member"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="30dp"
+                            android:layout_marginLeft="5dp"
                             android:layout_marginTop="5dp"
-                            android:text="Member"
-                            android:textStyle="bold" />
+                            android:text="Member" />
 
                         <TextView
                             android:id="@+id/text_coupon"
@@ -284,28 +291,23 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="30dp"
                             android:layout_marginTop="5dp"
-                            android:text="Coupon"
-                            android:textStyle="bold" />
+                            android:text="Coupon" />
 
                         <TextView
                             android:id="@+id/text_spike"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="30dp"
+                            android:layout_marginLeft="35dp"
                             android:layout_marginTop="5dp"
-                            android:paddingLeft="5dp"
-                            android:text="Spike"
-                            android:textStyle="bold" />
+                            android:text="Spike" />
 
                         <TextView
                             android:id="@+id/text_integral"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="30dp"
+                            android:layout_marginLeft="33dp"
                             android:layout_marginTop="5dp"
-                            android:paddingLeft="7dp"
-                            android:text="Integral"
-                            android:textStyle="bold" />
+                            android:text="Integral" />
                     </TableRow>
                 </TableLayout>
 
@@ -316,8 +318,7 @@
                 android:id="@+id/linearLayout14"
                 android:layout_width="409dp"
                 android:layout_height="match_parent"
-                android:layout_marginTop="0dp"
-                android:background="#EAE9E9"
+                android:background="#F5F5F5"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -326,38 +327,48 @@
 
                 <LinearLayout
                     android:layout_width="396dp"
-                    android:layout_height="95dp"
+                    android:layout_height="120dp"
                     android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/imageView"
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
                         android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:layout_marginTop="5dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:srcCompat="@drawable/imageproducts" />
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/imageproducts" />
+                    </androidx.cardview.widget.CardView>
+
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="392dp"
-                    android:layout_height="220dp"
+                    android:layout_height="325dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="-15dp"
                     android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="184dp"
-                        android:layout_height="200dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="20dp"
                         android:background="@drawable/corner_for_back"
                         android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/lipstick"
-                            android:layout_width="78dp"
-                            android:layout_height="95dp"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
                             android:layout_gravity="center"
                             app:srcCompat="@drawable/image" />
 
@@ -387,29 +398,29 @@
                             android:textSize="18sp" />
 
                         <Button
-                            android:id="@+id/button869"
+                            android:id="@+id/btnvla1"
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
                             android:layout_gravity="center"
                             android:layout_marginTop="7dp"
-                            android:background="#FF0000"
+                            android:background="#F13C3A"
                             android:text="Buy now"
                             android:textColor="#FFFFFF"
-                            app:backgroundTint="#FF0000" />
+                            app:backgroundTint="#F13C3A" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="189dp"
-                        android:layout_height="200dp"
+                        android:layout_height="300dp"
                         android:layout_marginLeft="16dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:background="@drawable/corner_for_back"
                         android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/lotion"
-                            android:layout_width="78dp"
-                            android:layout_height="95dp"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
                             android:layout_gravity="center"
                             app:srcCompat="@drawable/clenerplac" />
 
@@ -439,15 +450,15 @@
                             android:textSize="18sp" />
 
                         <Button
-                            android:id="@+id/cost_cleanser869"
+                            android:id="@+id/btnvla2"
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
                             android:layout_gravity="center"
                             android:layout_marginTop="7dp"
-                            android:background="#FF0000"
+                            android:background="#F13C3A"
                             android:text="Buy now"
                             android:textColor="#FFFFFF"
-                            app:backgroundTint="#FF0000" />
+                            app:backgroundTint="#F13C3A" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
