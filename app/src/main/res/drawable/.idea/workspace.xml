@@ -8,13 +8,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
-  </component>
   <component name="ProjectId" id="1ZqyQ7isw8wAW50y8hpSif4DWIc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/AndroidStudioProjects/TestApp" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Документы/GitHub/AndroidShop" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -40,16 +36,5 @@
       <updated>1585580899600</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
