@@ -21,19 +21,19 @@ public class Main2Activity extends AppCompatActivity {
     private BottomNavigationView bnv;
 
 
-//    private  String[] citys = {"Los Angeles","New-York"};
+    private  String[] citys = {"Los Angeles","New-York"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-//        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,android.R.layout.simple_spinner_item,citys);
-//        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//
-//
-//        Spinner spinner = (Spinner)findViewById(R.id.spCity);
-//
-//        spinner.setAdapter(arrayAdapter);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,android.R.layout.simple_spinner_item,citys);
+        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+
+        Spinner spinner = (Spinner)findViewById(R.id.spCity);
+
+        spinner.setAdapter(arrayAdapter);
 
         bnv = (BottomNavigationView)findViewById(R.id.bottomNavigationView3);
         bnv.setOnNavigationItemSelectedListener(getBottomNavigationListener());
